@@ -708,6 +708,95 @@ img {
 }
 
 /* ═══════════════════════════════════════════════════════════
+   WHY YOUR BUSINESS NEEDS A WEBSITE (SECTION 03)
+   ═══════════════════════════════════════════════════════════ */
+.why {
+  padding: var(--sp-4xl) 0;
+  background: var(--kw-black-pure);
+  position: relative;
+  z-index: 2;
+}
+
+.why__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--sp-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3xl);
+}
+
+.why__header {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-sm);
+}
+
+.why__heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--kw-white-pure);
+  letter-spacing: -0.02em;
+}
+
+.why__heading--accent {
+  color: var(--kw-muted);
+  font-weight: 400;
+}
+
+.why__subheading {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.5vw, 1.15rem);
+  color: var(--kw-muted);
+  line-height: 1.6;
+  margin-top: var(--sp-sm);
+  max-width: 600px;
+}
+
+.why__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--sp-xl);
+}
+
+.why-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-md);
+  padding: var(--sp-xl) var(--sp-sm) 0 0;
+  border-top: 1px solid var(--kw-border);
+  transition: border-color var(--duration-normal) var(--ease-out-expo), transform var(--duration-normal) var(--ease-out-expo);
+}
+
+.why-card:hover {
+  border-top-color: var(--kw-accent);
+  transform: translateY(-5px);
+}
+
+.why-card__icon {
+  color: var(--kw-accent-light);
+  margin-bottom: var(--sp-sm);
+}
+
+.why-card__title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--kw-white-pure);
+  letter-spacing: -0.01em;
+}
+
+.why-card__desc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--kw-muted);
+  line-height: 1.6;
+}
+
+/* ═══════════════════════════════════════════════════════════
    FEATURES — "Why Choose KindleWorks?" dark grid cards
    ═══════════════════════════════════════════════════════════ */
 
